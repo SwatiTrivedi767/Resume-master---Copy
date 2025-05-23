@@ -136,8 +136,6 @@
     margin-inline-start: 0.25rem;
   }
 
-  /* Ensure the page has full height and center content vertically and horizontally */
-/* Ensure the page takes full height and centers content */
 
 body, html {
   margin: 0;
@@ -210,32 +208,6 @@ p {
   min-height: 100vh;
 }
 
-/*.circle-container {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  margin-top: 20px;
-}
-.circle {
-  width: 110px;
-  height: 110px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 16px;
-  font-weight: bold;
-  text-transform: uppercase;
-  cursor: pointer;
-  transition: all 0.3s ease;
-
-  background-color: rgba(255, 255, 255, 0.05); 
-  color: #ffffff; 
-  border: 1px solid rgba(255, 255, 255, 0.2); 
-  backdrop-filter: blur(5px); 
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); 
-} */
-
 .circle:hover {
   background-color: rgba(255, 255, 255, 0.15);
   transform: scale(1.05);
@@ -258,10 +230,6 @@ p {
     opacity: 1; /* End visible */
   }
 }
-
-/* .profile-photo:hover {
-  box-shadow: 0 0 20px rgba(255, 251, 38, 0.8);
-} */
 
 .profile-photo:hover {
   box-shadow: 0 0 20px rgba(255, 251, 38, 0.8);
