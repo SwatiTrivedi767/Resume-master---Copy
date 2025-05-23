@@ -119,6 +119,7 @@
   }
 </style>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<body>
 <app-header (contactPage)="contactPage($event)" (resumePage)="resumePage($event)" (homePage)="homePage($event)" (projectPage)="projectPage($event)"></app-header>
  <div class="overlay"></div>
 <div class="main-container">
@@ -145,7 +146,7 @@
         <span class="word"> learned.</span>
       </p>
     </div>
-    <div class="container circles" style="margin: 15px; text-align: center;">
+    <div class="container circles" style="margin: 15px; text-align: center; color: aliceblue;">
       <div class="circle-container">
         <div class="circle red" (click)="resumePage($event)">About </div>
      <!-- <div class="circle green" (click)="projectPage($event)">Projects</div>
@@ -160,4 +161,5 @@
 <app-project *ngIf="project"></app-project>
 <app-footer class=""></app-footer>
 </div>
+</body>
 

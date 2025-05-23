@@ -25,7 +25,7 @@ body, html {
   margin: 0;
   padding: 0;
   height: 100vh;
-  overflow-x: hidden;
+ overflow: hidden;
 }
 
 .scroll-container {
@@ -124,13 +124,27 @@ p {
   box-shadow: 0 0 20px rgba(255, 251, 38, 0.8);
 }
 
-.main-container {
+/*.main-container {
   background-image: url('/assets/Portfolioo.avif');
   height: calc(100vh - 70px); 
    overflow: auto;  
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
+} */
+ .main-container {
+  position: fixed; /* Make it fill the viewport */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 86vh;
+  background-image: url('/assets/Portfolioo.avif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+   justify-content: space-between;
 }
 .overlay {
   background-color: rgba(127, 20, 234, 0.5); /* Purple with 50% opacity */
