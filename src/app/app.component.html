@@ -117,6 +117,31 @@
     letter-spacing: -0.00875rem;
     text-decoration: none;
   }
+   .main-container {
+  position: fixed; /* Make it fill the viewport */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 86vh;
+  background-image: url('/assets/Portfolioo.avif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+   justify-content: space-between;
+}
+.overlay {
+  background-color: rgba(127, 20, 234, 0.5); /* Purple with 50% opacity */
+}
+
+.profile-photo:hover {
+  box-shadow: 0 0 20px rgba(255, 251, 38, 0.8);
+  background-color: rgba(0, 0, 0, 0.5); /* Adds a transparent black overlay */
+}
+
+.circle:hover {
+  box-shadow: 0 0 20px rgba(255, 251, 38, 0.8);
+}
 </style>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <body>
