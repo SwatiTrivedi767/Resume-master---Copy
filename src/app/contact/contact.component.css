@@ -6,13 +6,14 @@
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   } */
-   .contact {
-  max-width: 500px;          /* Limit width */
-  margin: 40px auto;         /* Center horizontally and add vertical spacing */
-  padding: 20px;             /* Inner space */
-  background-color: rgba(0, 0, 0, 0.5); /* Optional: semi-transparent background */
-  border-radius: 10px;       /* Rounded corners */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Optional: soft shadow */
+   /*.contact {              
+  padding: 30px;           
+  background-color: rgba(0, 0, 0, 0.5); 
+   border-radius: 10px;     
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 10%;
+  max-width: 30px;
+  box-sizing: border-box;
 }
   
   .contact h2 {
@@ -32,21 +33,20 @@
   
   .form-group input,
   .form-group textarea {
-    width: 100%;
+    width: 60%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 16px;
   }
   
-  .form-group textarea {
-    resize: vertical;
-    height: 150px;
-  }
+.form-group {
+  margin-bottom: 100px;
+}
   
   button {
     display: block;
-    width: 100%;
+    width: 20%;
     padding: 10px;
     background-color: #007bff;
     border: none;
@@ -55,6 +55,7 @@
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s;
+    align-items: center;
   }
   
   button:disabled {
@@ -68,15 +69,63 @@
 
 .contact input,
 .contact textarea {
-  width: 95%;       /* Or fixed like 200px */
-  max-width: 800px; /* Prevents them from getting too big on wide screens */
+  width: 30%;
+  max-width: 100px;
+  padding: 10px;
+  margin-top: 5px;
+  box-sizing: border-box;
 }
 
+/*.contact-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  padding: 180px , 20px; 
+  box-sizing: border-box;
+} */
+
+button:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+/* Center the form on the screen */
 .contact-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 80vh; /* Full viewport height */
-  padding: 180px , 20px; /* Prevent it from sticking to edges on small screens */
+  min-height: 80vh;
+  padding: 20px;
   box-sizing: border-box;
+ background-image: url('/assets/Portfolioo.avif');
+}
+
+/* Make the form look like a box */
+.contact {
+  background-color: rgba(0, 0, 0, 0.7); 
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  box-sizing: border-box;
+}
+
+.contact input,
+.contact textarea {
+  width: 95%;
+  max-width: 800px;
+  padding: 10px;
+  margin-top: 5px;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.2); 
+}
+
+.form-group {
+  margin-bottom: 20px;
 }
